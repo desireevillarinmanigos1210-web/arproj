@@ -10,8 +10,13 @@
   <a-scene embedded
            arjs="sourceType: webcam; debugUIEnabled: false;"
            vr-mode-ui="enabled: false">
-   <a-marker preset="hiro">
-  <a-box position="0 0.5 0" color="red"></a-box>
+ <a-marker preset="hiro">
+  <a-entity
+    gltf-model="kung_fu_panda_dancing.glb"
+    animation-mixer
+    scale="0.1 0.1 0.1"
+    position="0 0 0">
+  </a-entity>
 </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
